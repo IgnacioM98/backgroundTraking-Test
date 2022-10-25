@@ -25,7 +25,8 @@
           "location",
           "fetch"
         ]
-      }
+      },
+      "bundleIdentifier": "com.emp.activelocations"
     },
     "android": {
       "adaptiveIcon": {
