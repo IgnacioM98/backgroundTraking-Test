@@ -69,8 +69,8 @@ export default function App() {
 
     await Location.startLocationUpdatesAsync(TASK_NAME, {
       // For better logs, we set the accuracy to the most sensitive option
-      // accuracy: Location.Accuracy.BestForNavigation,
-      accuracy: 22,
+      accuracy: Location.Accuracy.BestForNavigation,
+      // accuracy: 22,
       // Make sure to enable this notification if you want to consistently track in the background
       showsBackgroundLocationIndicator: true,
       foregroundService: {
