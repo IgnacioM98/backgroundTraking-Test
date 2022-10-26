@@ -3,6 +3,7 @@ import { Button, StyleSheet, Text, View } from "react-native";
 import * as Location from "expo-location";
 import * as TaskManager from "expo-task-manager";
 import { useEffect, useState } from "react";
+import firestore from "@react-native-firebase/firestore";
 
 const TASK_NAME = "BACKGROUND_LOCATION_TASK";
 
@@ -73,6 +74,8 @@ export default function App() {
       // accuracy: 22,
       // Make sure to enable this notification if you want to consistently track in the background
       showsBackgroundLocationIndicator: true,
+      pausesUpdatesAutomatically: false,
+      timeInterval: 600000, // 10 Minutos intervalo update
       foregroundService: {
         notificationTitle: "Location",
         notificationBody: "Location tracking in background",
@@ -99,7 +102,14 @@ export default function App() {
         );
     };
     requestPermissions();
+    handleSaveData();
   }, []);
+
+  const handleSaveData = async () => {
+    try {
+      await firestore().collection("Registros").add({ Welcome: "Hola" });
+    } catch {}
+  };
 
   return (
     <View style={styles.container}>

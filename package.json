@@ -8,6 +8,10 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-firebase/analytics": "^16.3.0",
+    "@react-native-firebase/app": "^16.3.0",
+    "@react-native-firebase/crashlytics": "^16.3.0",
+    "@react-native-firebase/firestore": "^16.3.0",
     "expo": "~46.0.16",
     "expo-location": "~14.3.0",
     "expo-splash-screen": "~0.16.2",

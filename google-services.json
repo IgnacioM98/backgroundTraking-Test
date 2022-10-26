@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "855913755601",
+    "project_id": "sos-mineria",
+    "storage_bucket": "sos-mineria.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855913755601:android:685ace37eda8b4710de6f0",
+        "android_client_info": {
+          "package_name": "com.emp.activelocations"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855913755601-9q8ksn8n9n245r0nv1ttiibgrav1i51k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcwpU8YOF57Qusor3jopUwflfU02unyw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855913755601-9q8ksn8n9n245r0nv1ttiibgrav1i51k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
